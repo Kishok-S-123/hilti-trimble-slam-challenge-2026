@@ -51,7 +51,7 @@ The winning teams will be awarded a prize money, so stay tuned for the full rele
     <td align="center" width="33%">
       <img src="images/outdoor.jpeg" alt="Outdoor">
       <br>
-      <em>Outdoor Building</em>
+      <em>Outdoor View</em>
     </td>
   </tr>
 </table>
