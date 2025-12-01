@@ -16,6 +16,7 @@
    * [Sensor Data & ROS Bags](#sensor-data-ros-bags)
    * [Image Decompression](#image-decompression)
    * [Image Inversion](#image-inversion)
+- [Evaluation](#evaluation)
 - [Devices](#devices)
    * [Camera (Visual-Inertial Sensor)](#camera-visual-inertial-sensor)
    * [Lidar (Ground Truth Acquisition)](#lidar-ground-truth-acquisition)
@@ -142,6 +143,12 @@ ros2 run challenge_tools_ros rotate_image_180.py /ov_msckf/trackhist
 ```
 You can change the topic to another topic, such as `/cam0/image_raw`.
 The rotated topic will be `/cam0/image_raw/rotated`, which you can then visualize to RViz.
+
+<!-- TOC --><a name="evaluation"></a>
+# Evaluation
+The main evaluation metric will be **RMSE** between the reference trajectory and the slam trajectory. 
+
+More insights on the exact evaluation procedure will be provided on the **1st of February**.
 
 
 <!-- TOC --><a name="devices"></a>
