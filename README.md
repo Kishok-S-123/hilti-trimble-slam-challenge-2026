@@ -4,10 +4,10 @@
 
 <!-- TOC --><a name="hilti-x-trimble-slam-challenge-2026"></a>
 <h1 align="center" style="font-size: 35px;">
-  Hilti x Trimble SLAM Challenge 2026
+  Hilti x Trimble 360° Camera-Based SLAM Challenge 2026
 </h1>
 
-- [Introduction: Visual-Inertial SLAM Challenge with Additional Building Floorplans](#introduction)
+- [360° Camera-Based Visual-Inertial SLAM Challenge with Additional Building Floorplans](#introduction)
 - [Dataset](#dataset)
    * [Dataset Floorplans](#dataset-floorplans)
    * [Dataset Properties](#dataset-properties)
@@ -19,7 +19,7 @@
    * [Image Inversion](#image-inversion)
 - [Evaluation](#evaluation)
 - [Devices](#devices)
-   * [Camera (Visual-Inertial Sensor)](#camera-visual-inertial-sensor)
+   * [360° Camera (Visual-Inertial Sensor)](#camera-visual-inertial-sensor)
    * [Lidar (Ground Truth Acquisition)](#lidar-ground-truth-acquisition)
    * [Camera and IMU Calibration](#camera-and-imu-calibration)
 - [Challenge Tools ROS](#challenge-tools-ros)
@@ -28,12 +28,12 @@
    * [Stella-VSLAM Example](#stella-vslam-example)
 
 <!-- TOC --><a name="introduction"></a>
-# Introduction: Visual-Inertial SLAM Challenge with Additional Building Floorplans
+# 360° Camera-Based Visual-Inertial SLAM Challenge with Additional Building Floorplans
 
 Accurate and reliable SLAM is a cornerstone of robotics, automation, and digital construction workflows. Yet real-world construction sites remain one of the most challenging environments for modern Visual-Inertial SLAM systems: changing lighting conditions, repetitive textures and partial building progress push even state-of-the-art algorithms to their limits.
 
 To advance the field and establish a common benchmark for these demanding scenarios, [Hilti](http://hilti.com/), [Trimble](https://www.trimble.com/), and the [Dynamic Robot Systems Group](https://dynamic.robots.ox.ac.uk/) of University of Oxford have joined forces to launch the SLAM Challenge 2026.
-Our intention is to provide an open and realistic dataset, captured directly on active construction sites, to evaluate and compare SLAM systems in real industrial conditions.
+Our intention is to provide an open and realistic dataset, captured directly on active construction sites and using **360° camera**, to evaluate and compare SLAM systems in real industrial conditions.
 
 The winning teams will be awarded a prize money, so stay tuned for the full release on the **1st of February 2026**. The challenge winners will be announced at ICRA in June 2026.
 
@@ -59,7 +59,7 @@ The winning teams will be awarded a prize money, so stay tuned for the full rele
 
 <!-- TOC --><a name="dataset"></a>
 # Dataset
-The goal of this challenge is to accurately localize the [camera](#camera-visual-inertial-sensor) within the provided floorplans [as described below](#openvins-example).
+The goal of this challenge is to accurately localize the [360° camera](#camera-visual-inertial-sensor) within the provided floorplans [as described below](#openvins-example).
 
 We are providing 5 samples for the early release (released 1st of December 2025). You can find the public folder [here](https://drive.google.com/drive/folders/19ajbmr7ByWxHiy1X4yqK8W02xUmePGLd?usp=drive_link) or you can directly download the rosbag from the table below: 
 | Youtube Video | Rosbag Download | Ground Truth |
@@ -179,7 +179,7 @@ More insights on the exact evaluation procedure will be provided for the officia
 <!-- TOC --><a name="devices"></a>
 # Devices
 <!-- TOC --><a name="camera-visual-inertial-sensor"></a>
-## Camera (Visual-Inertial Sensor)
+## 360° Camera (Visual-Inertial Sensor)
 Each run was captured using the **Insta360 One-RS 1-Inch Edition** ([Insta360 website](https://www.insta360.com/product/insta360-oners/1inch-360)).
 
 - Sensors and Lenses: The camera is equipped with two 1-inch CMOS sensors (co-engineered with Leica). Each lens is a Leica Summicron-A 6.52 mm f/2.2 fisheye, providing an extremely wide field of view (approx. 200° per lens) for full 360° coverage.
