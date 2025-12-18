@@ -155,7 +155,7 @@ The provided files are ROS 2 bags. The dataset contains the following topics:
 | `/cam1/image_raw/compressed` | `sensor_msgs/msg/CompressedImage` | Back Camera data (RGB, 1472×1440 resolution). Compressed to minimize file size. |
 | `/imu/data_raw` | `sensor_msgs/msg/Imu` | Raw IMU data. |
 
-**Update**: ROS 2 **Jazzy on Ubuntu 24.04** officially supports the `offered_qos_profiles: []` syntax by default in the `metadata.yaml` file. However, if you are using a different ROS 2 distribution (such as **Humble on Ubuntu 22.04**), this may cause the following parsing exception:
+**Warning**: ROS 2 **Jazzy on Ubuntu 24.04** officially supports the `offered_qos_profiles: []` syntax by default in the `metadata.yaml` file. However, if you are using a different ROS 2 distribution (such as **Humble on Ubuntu 22.04**), this may cause the following parsing exception:
 
 `Exception on parsing info file: yaml-cpp: error at line 14, column 31: bad conversion.`
 
