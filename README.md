@@ -8,7 +8,7 @@
   <a href="https://scholar.google.com/citations?hl=en&user=T0M78kEAAAAJ">Yifu Tao</a>,
   <a href="https://scholar.google.com/citations?hl=en&user=lVIr3qcAAAAJ">Julian Kindle</a>,
   <a href="https://scholar.google.com/citations?hl=en&user=Vxwg0vcAAAAJ">Frank Neuhaus</a>,
-  <a href="https://scholar.google.com/citations?hl=en&user=d1xlF6AAAAAJ">Tillman Koss</a>,
+  <a href="https://scholar.google.com/citations?hl=en&user=d1xlF6AAAAAJ">Tilman Koß</a>,
   <a href="https://scholar.google.com/citations?hl=en&user=8I_26uEAAAAJ">Aryaman Patel</a>,
   <br>
   <a href="https://scholar.google.com/citations?hl=en&user=ztmyFyUAAAAJ">Michael Helmberger</a>,
