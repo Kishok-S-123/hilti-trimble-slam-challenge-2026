@@ -298,6 +298,23 @@ The provided recordings are ROS 2 bags. The dataset contains the following topic
 | `/cam1/image_raw/compressed` | `sensor_msgs/msg/CompressedImage` | 30 Hz | Back Camera data (RGB, 1472×1440 resolution). Compressed to minimize file size. |
 | `/imu/data_raw` | `sensor_msgs/msg/Imu` | 1000 Hz | Raw IMU data. |
 
+> [!TIP]
+> **Humble + Ubuntu 22.04 Compatibility Fix**
+> 
+> If you encounter playback errors, update your configuration of the `metadata.yaml` file of each rosbag :
+>
+> Replace:
+>   ```
+>   offered_qos_profiles:
+>      []
+>   ```
+> With:
+>   ```
+>   offered_qos_profiles:
+>      ""
+>   ```
+
+
 <!-- TOC --><a name="constant-timestamp-shift"></a>
 ### Constant Timestamp Shift
 In Insta360, the IMU recordings slightly preceed the cameras. To avoid negative IMU timestamps, we applied a constant timestamp shift of `1e4` seconds to all runs. Therefore, all image message timestamps start at t = 10000 sec.
